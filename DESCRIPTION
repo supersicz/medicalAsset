@@ -1,0 +1,32 @@
+Package: infotheo
+Title: Information-Theoretic Measures
+Version: 1.2.0.1
+Date: 2014-07-16
+Author: Patrick E. Meyer
+Description: Implements various measures of information theory based on several entropy estimators.
+Maintainer: Patrick E. Meyer <software@meyerp.com>
+License: GPL (>= 3)Package: medicalAsset
+Title: Clinical Special Disease Data Asset Value Assessment
+Version: 1.0.0
+Authors@R: person("Supersicz", email = "supersi@aliyun.com", role = c("aut", "cre"))
+Description: Implements the patented multi-dimensional value assessment framework for clinical special disease data assets.
+Depends: R (>= 4.0.0)
+Imports:
+    dplyr,
+    stringr,
+    gbm,
+    car,
+    infotheo,
+    e1071,
+    stats
+License: MIT
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+LazyData: false
+URL: https://github.com/supersicz/medicalAsset
+Repository: CRAN
+Packaged: 2022-04-08 10:26:51 UTC; hornik
+NeedsCompilation: yes
+Date/Publication: 2022-04-08 11:00:24 UTC
+Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:31:08 UTC; windows
+Archs: x64
