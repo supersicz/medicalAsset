@@ -45,3 +45,14 @@ devtools::install_github("supersicz/medicalAsset")
 
 library(medicalAsset)
 
+### Results examples
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/db3b1e88-13b2-4f79-997f-f05afb154738" />
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/f8dbf2d9-ce40-4448-a56d-8b6ff4dafc8d" />
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/4e6b10bc-2d29-4f85-b6ff-1f7e1b1ad0c9" />
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/59bd2a3a-c85c-46c5-8e5b-4d4333bf12c9" />
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/3f2a2b3f-6169-402f-a2f4-3a78f7ab8313" />
+
