@@ -49,10 +49,6 @@ library(medicalAsset)
 <img width="700" height="509" alt="image" src="https://github.com/user-attachments/assets/1ebd169e-2c75-439b-be21-7d7ba3c87e72" />
 <img width="701" height="505" alt="image" src="https://github.com/user-attachments/assets/d3926ff0-3e38-47d2-86f9-fdbefdde9216" />
 
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/f8dbf2d9-ce40-4448-a56d-8b6ff4dafc8d" />
-
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/4e6b10bc-2d29-4f85-b6ff-1f7e1b1ad0c9" />
-
 <img width="643" height="481" alt="image" src="https://github.com/user-attachments/assets/3fd4c9b8-ee8b-446c-9196-24d40c0f22b8" />
 
 <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/3f2a2b3f-6169-402f-a2f4-3a78f7ab8313" />
