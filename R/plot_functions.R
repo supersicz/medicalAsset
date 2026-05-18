@@ -23,14 +23,24 @@ plot_dimension_score <- function(res) {
 plot_indicator_importance <- function(res) {
     library(ggplot2)
     feats <- res$selected_features[1:min(8, length(res$selected_features))]
-    df <- data.frame(feature=feats, score=runif(length(feats), 0.5, 1.0))
-    df <- df[order(df$score),]
-    ggplot(df, aes(x=score, y=reorder(feature, score))) +
-        geom_col(fill="#457b9d") +
-        theme_bw() +
-        labs(title="Top Feature Importance", x="Importance", y="Feature")
+    imp <- round(runif(length(feats), 0.5, 1.0),2)
+    df <- data.frame(feature=feats, Score=imp)
+    df <- df[order(df$Score),]
+    
+    ggplot(df, aes(x = reorder(feature, Score), y = Score, fill = feature)) +
+        geom_col(alpha = 0.85, width = 0.6) +
+        geom_text(aes(label = Score), vjust = -0.3, size = 4.5, fontface = "bold") +
+        scale_fill_brewer(palette = "Set2") +
+        # coord_flip() +
+        labs(title = "Feature Importance",
+             # subtitle = "Clinical Disease-Specific Data Asset",
+             x = "Feature", y = "Score") +
+        ylim(0, 1.05) +
+        theme_bw(base_size = 13) +
+        theme(axis.text.x = element_text(size = 12,angle=20, hjust=1))+
+        theme(legend.position = "none",
+              plot.title = element_text(hjust = 0.5, face = "bold"))
 }
-
 #' 3. Comprehensive score gauge plot
 #'
 #' @param res Assessment result list
