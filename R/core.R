@@ -111,6 +111,13 @@ medicalAsset_assess <- function(data) {
         total>=90~"A", total>=80~"B", total>=70~"C", TRUE~"D"
     )
 
+
+    feature_importance <- c()
+    if (ncol(num_data) > 0) {
+        vars <- apply(num_data, 2, function(x) stats::var(x, na.rm = TRUE))
+        feature_importance <- vars / sum(vars, na.rm = TRUE)
+    }
+
     list(
         data_quality = data_quality,
         cost = cost,
@@ -120,6 +127,7 @@ medicalAsset_assess <- function(data) {
         comprehensive_score = total,
         grade = grade,
         selected_features = colnames(num_data),
-        quality_detail = c(completeness=completeness, uniqueness=uniqueness, accuracy=accuracy, consistency=consistency)
+        quality_detail = c(completeness=completeness, uniqueness=uniqueness, accuracy=accuracy, consistency=consistency),
+        feature_importance = feature_importance
     )
 }
