@@ -83,14 +83,13 @@ plot_comprehensive_gauge <- function(res) {
         )
     ) |>
     e_title(
-        # text = "2型糖尿病数据资产价值评估",
         subtext = "Data Asset Value Assessment",
         left = "center"
     ) |>
     e_theme("westeros")  # 专业配色
 }
 
-#' 4. 数据质量成分图
+#' 4. data quality 
 #' @export
 plot_data_quality <- function(res) {
     if (!requireNamespace("ggplot2", quietly = TRUE)) {
@@ -112,7 +111,7 @@ plot_data_quality <- function(res) {
                       x = "Score (%)", y = "Quality Item")
 }
 
-#' 5. 数据质量五维度雷达图
+#' 5. data quality radar plot
 #' @param res Assessment result list
 #' @return Radar chart
 #' @export
